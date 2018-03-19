@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Catalog\Model\Product">
+        <plugin name="after_product_save_aaa" type="AstralWeb\ProductImageFix\Model\AfterSaveProduct"/>
+    </type>
+    <preference for="Magento\Catalog\Model\Product\Gallery\Processor" type="AstralWeb\ProductImageFix\Model\Catalog\Product\Gallery\Processor"/>
+</config>
